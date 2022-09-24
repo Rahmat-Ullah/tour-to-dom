@@ -10,6 +10,12 @@
         li{
             background-color: aquamarine;
         }
+        #fruits{
+            background-color: forestgreen;
+        }
+        .inportant-places{
+            color: brown;
+        }
     </style>
 </head>
 <body>
@@ -18,12 +24,32 @@
         <h1>Welcome to my wrld</h1>
     </header>
     <main>
-        <ul>
-            <li>Jalali</li>
-            <li>Shafayat</li>
-            <li>Bondhu</li>
-            <li>Valo</li>
-        </ul>
+        <section>
+            <h1>Friends</h1>
+            <ul>
+                <li>Jalali</li>
+                <li>Shafayat</li>
+                <li>Bondhu</li>
+                <li>Valo</li>
+            </ul>
+        </section>
+        <section>
+            <h1 id="fruits">Fruits</h1>
+            <ul>
+                <li>Apple</li>
+                <li>Banana</li>
+                <li>Mango</li>
+                <li>Guava</li>
+            </ul>
+        </section>
+        <section>
+            <ul>
+                <h1 id="places">Places</h1>
+                <li class="inportant-places">Sundorbon</li>
+                <li class="inportant-places">bandorbon</li>
+                <li>cox's Bazar</li>
+            </ul>
+        </section>
     </main>
 
     <script src="js/dom.js"></script>
@@ -31,13 +57,21 @@
         const liCollection = document.getElementsByTagName('li');
         // console.log(liCollection);
         for(const li of liCollection){
-            console.log(li.innerText);
+            // console.log(li.innerText);
         }
 
         const allHeadings = document.getElementsByTagName('h1');
         for(const h1 of allHeadings){
-            console.log(h1.innerText.split(' '));
+            // console.log(h1.innerText.split(' '));
         }
+
+        const className = document.getElementsByClassName('important-palces');
+        for(const place of className){
+            console.log(place.innerText);
+        }
+
+        const fruitsName = document.getElementById('fruits');
+        fruitsName.innerText = 'fruits are good for human health.'
     </script>
 </body>
 </html>
