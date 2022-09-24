@@ -15,6 +15,7 @@
 <body>
     <header>
         <h1>Welcome to DOM</h1>
+        <h1>Welcome to my wrld</h1>
     </header>
     <main>
         <ul>
@@ -27,7 +28,16 @@
 
     <script src="js/dom.js"></script>
     <script>
-        console.log('from inside html file');
+        const liCollection = document.getElementsByTagName('li');
+        // console.log(liCollection);
+        for(const li of liCollection){
+            console.log(li.innerText);
+        }
+
+        const allHeadings = document.getElementsByTagName('h1');
+        for(const h1 of allHeadings){
+            console.log(h1.innerText.split(' '));
+        }
     </script>
 </body>
 </html>
