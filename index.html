@@ -72,6 +72,15 @@
 
         const fruitsName = document.getElementById('fruits');
         fruitsName.innerText = 'fruits are good for human health.'
+
+
+        //QuerrySel=ctor
+
+        const someLi = document.querySelectorAll('fruits');
+        // console.log(someLi);
+        for(const li of someLi){
+            console.log(li.innerText);
+        }
     </script>
 </body>
 </html>
