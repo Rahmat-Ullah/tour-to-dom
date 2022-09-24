@@ -15,6 +15,7 @@
         }
         .inportant-places{
             color: brown;
+            text-align: center;
         }
     </style>
 </head>
@@ -33,8 +34,8 @@
                 <li>Valo</li>
             </ul>
         </section>
-        <section>
-            <h1 id="fruits">Fruits</h1>
+        <section class="fruits-container">
+            <h1 id="fruits" class="fruits are very much healthy for human bodies">Fruits</h1>
             <ul>
                 <li>Apple</li>
                 <li>Banana</li>
@@ -53,6 +54,7 @@
     </main>
 
     <script src="js/dom.js"></script>
+    <script src="js/style.js"></script>
     <script>
         const liCollection = document.getElementsByTagName('li');
         // console.log(liCollection);
@@ -67,7 +69,7 @@
 
         const className = document.getElementsByClassName('important-palces');
         for(const place of className){
-            console.log(place.innerText);
+            // console.log(place.innerText);
         }
 
         const fruitsName = document.getElementById('fruits');
@@ -79,7 +81,7 @@
         const someLi = document.querySelectorAll('fruits');
         // console.log(someLi);
         for(const li of someLi){
-            console.log(li.innerText);
+            // console.log(li.innerText);
         }
     </script>
 </body>
